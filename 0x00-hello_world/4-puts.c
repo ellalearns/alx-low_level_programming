@@ -2,14 +2,16 @@
 
 
 /**
- * this
- * is
- * a
- * function
  * description
 */
 int main(void)
 {
+/**
+ * doing something
+*/
 puts("\"Programming is like building a multilingual puzzle\n");
-return(0);
+/**
+ * completely annoying right now
+*/
+return (0);
 }
