@@ -3,7 +3,7 @@
 /*
 * hdsjhkdjkhdjk
 */
-int main(void)
+int main(void) /* jklsdjlkds */
 {
 
 /*
