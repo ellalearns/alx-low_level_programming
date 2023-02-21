@@ -5,6 +5,7 @@
 */
 /**
  * main - This is a description
+ * Return: 1 because I said so
  */
 int main(void) /* jklsdjlkds */
 {
