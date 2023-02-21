@@ -3,6 +3,9 @@
 /*
 * hdsjhkdjkhdjk
 */
+/**
+ * main - This is a description
+ */
 int main(void) /* jklsdjlkds */
 {
 
