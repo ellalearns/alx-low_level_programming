@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /*
-* hdsjhkdjkhdjk 
+* hdsjhkdjkhdjk
 */
 int main(void)
 {
 
-/* 
+/*
 * jhjkdsjkds
 * kjkljsdjkl
 */
