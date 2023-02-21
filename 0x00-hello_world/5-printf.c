@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-/**
- * description
-*/
+/* description */
 int main(void)
 {
-/**
- * doing something
-*/
+/* doing something */
 printf("with proper grammar, but the outcome is a piece of art,\n");
+
 /**
  * completely annoying right now
 */

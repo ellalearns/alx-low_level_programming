@@ -1,21 +1,15 @@
 #include <stdio.h>
 
-/**
- * description description
- * more description
- * i hate comments 
- * ghhhh
-*/
+/* hdsjhkdjkhdjk */
 int main(void)
 {
 
-/**
- * what
- * the
- * f
+/* jhjkdsjkds
+* kjkljsdjkl
 */
-printf("nd that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 
+/* njksdjkljklsd */
 return (1);
 
 }
