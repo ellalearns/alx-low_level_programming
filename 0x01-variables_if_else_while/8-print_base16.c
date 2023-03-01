@@ -5,13 +5,13 @@
  * main - to get positive or negative print
  * Return: 0 because i said so
 */
-int main()
+int main(void)
 {
-    int digit;
-    char octal;
+int digit;
+char octal;
 
-    digit = 0;
-    octal = 'a';
+digit = 0;
+octal = 'a';
 
 while (digit < 16)
 {
@@ -26,6 +26,6 @@ octal = octal + 1;
 }
 digit = digit + 1;
 }
-    putchar('\n');
-    return (0);
+putchar('\n');
+return (0);
 }
