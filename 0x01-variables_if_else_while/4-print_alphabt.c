@@ -11,7 +11,7 @@ alpha = 'a';
 
 while (alpha <= 'z')
 {
-if(alpha != 'e')
+if (alpha != 'e')
 {
 if (alpha != 'q')
 {

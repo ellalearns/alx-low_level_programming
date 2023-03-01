@@ -12,17 +12,14 @@ digit = 0;
 
 while (digit < 10)
 {
-if (digit == 0)
-{
 putchar('0' + digit);
-}
-else
+if (digit != 9)
 {
 putchar(',');
 putchar(' ');
-putchar('0'+digit);
 }
 digit = digit + 1;
 }
+putchar('\n');
 return (0);
 }
