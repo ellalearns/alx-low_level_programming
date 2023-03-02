@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 
-int main(void)
-{
-int a;
-a = _isalpha('p');
-putchar(a + '0');
-return (0);
-}
-
+/**
+ * _isalpha - What's that?
+ * Return 0: because I said so
+*/
 int _isalpha(int c)
 {
 if (c >= 97 && c<= 122)
