@@ -1,16 +1,5 @@
 #include <stdio.h>
-
-void print_alphabet(void);
-
-/**
- * main - What's that?
- * Return 0: because I said so
-*/
-int main(void)
-{
-print_alphabet();
-return (0);
-}
+#include "main.h"
 
 /**
  * print_alphabet - What's that?
