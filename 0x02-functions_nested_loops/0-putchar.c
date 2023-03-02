@@ -7,6 +7,7 @@
 */
 int _putchar()
 {
+    /* 
 // putchar('_');
 // putchar('p');
 // putchar('u');
@@ -16,6 +17,8 @@ int _putchar()
 // putchar('a');
 // putchar('r');
 // putchar('\n');
+
+*/
 
 printf("_putchar\n");
 
