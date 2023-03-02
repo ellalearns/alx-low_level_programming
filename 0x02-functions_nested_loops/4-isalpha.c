@@ -3,11 +3,14 @@
 
 /**
  * _isalpha - What's that?
+ * @ c : what do you want to know
  * Return 0: because I said so
+ * Return _isalpha: what?
+ * Return 1: please go through. this is disgusting.
 */
 int _isalpha(int c)
 {
-if (c >= 97 && c<= 122)
+if (c >= 97 && c <= 122)
 {
 return (1);
 }
