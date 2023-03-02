@@ -1,17 +1,5 @@
 #include <stdio.h>
-
-void print_alphabet_x10(void);
-
-/**
- * main - What's that?
- * Return 0: because I said so
-*/
-int main(void)
-{
-print_alphabet_x10();
-
-return (0);
-}
+#include "main.h"
 
 /**
  * print_alphabet_x10 - What's that?

@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int _isalpha(int c);
+#include "main.h"
 
 int main(void)
 {
