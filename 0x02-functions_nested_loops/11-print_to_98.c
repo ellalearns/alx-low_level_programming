@@ -11,7 +11,7 @@ int tempN;
 if (n < 98)
 {
 tempN = n;
-for (tempN; tempN <= 98; tempN++)
+for (tempN = n; tempN <= 98; tempN++)
 {
 if (tempN == 98)
 {
@@ -26,7 +26,7 @@ printf("%d, ", tempN);
 if (n > 98)
 {
 tempN = n;
-for (tempN; tempN >= 98; tempN--)
+for (tempN = n; tempN >= 98; tempN--)
 {
 if (tempN == 98)
 {
