@@ -7,8 +7,7 @@
 */
 void print_to_98(int n)
 {
-int n, tempN;
-n = 97;
+int tempN;
 if (n < 98)
 {
 tempN = n;

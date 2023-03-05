@@ -10,6 +10,7 @@ int vert, horz;
 vert = 0;
 while (vert < 10)
 {
+
 horz = 0;
 while (horz < 10)
 {
@@ -23,6 +24,7 @@ printf("%d, ", horz * vert);
 }
 horz = horz + 1;
 }
+
 printf("\n");
 vert = vert + 1;
 }
