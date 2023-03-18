@@ -18,7 +18,7 @@ len = len + 1;
 
 for (len = len; len >= 0; len--)
 {
-_putschar("%c", s[len]);
+puts("%c", s[len]);
 }
 
 }
