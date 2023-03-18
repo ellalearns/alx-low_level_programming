@@ -16,7 +16,7 @@ while (s[len])
 len = len + 1;
 }
 
-for (len = len; len >= 0; len--)
+for (len = len-1; len >= 0; len--)
 {
 printf("%c", s[len]);
 }
