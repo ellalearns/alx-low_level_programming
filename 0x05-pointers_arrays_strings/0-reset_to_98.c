@@ -8,6 +8,9 @@
  * @n: the pointer it takes in
 */
 void reset_to_98(int *n)
+/**
+ * can this people just leave me alone
+*/
 {
 
 *n = 98;
