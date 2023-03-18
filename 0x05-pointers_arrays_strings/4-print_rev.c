@@ -18,7 +18,7 @@ len = len + 1;
 
 for (len = len; len >= 0; len--)
 {
-printf("%c", s[len]);
+_putschar("%c", s[len]);
 }
 
 }
