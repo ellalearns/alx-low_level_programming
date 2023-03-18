@@ -11,12 +11,14 @@ void print_rev(char *s)
 int len;
 len = 0;
 
-while (s[len]) {
-    len = len + 1;
+while (s[len])
+{
+len = len + 1;
 }
 
-for (len = len-1; len >= 0; len--) {
-    printf("%c", s[len]);
+for (len = len; len >= 0; len--)
+{
+printf("%c", s[len]);
 }
 
 }
