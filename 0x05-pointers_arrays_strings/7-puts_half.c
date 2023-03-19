@@ -27,7 +27,7 @@ else
 n = (counter + 1)/2;
 }
 
-for (n; n < counter; n++)
+for (n = n; n < counter; n++)
 {
 printf("%c", str[n]);
 }
