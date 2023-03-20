@@ -67,7 +67,7 @@ return (0);
 
 else
 {
-if (n % 10 == 0 || n % 10 == 1 || n % 10 == 4 || n % 10 == 5 || n % 10 == 6 || n % 10 == 9)
+if (n % 10 == 0 || n % 10 == 1 || n % 10 == 4 || n % 10 == 5 || n % 10 == 6)
 {
 
 int sum;
@@ -76,23 +76,16 @@ sum = findSum(n);
 
 if (sum == 1 || sum == 4 || sum == 7 || sum == 9)
 {
-
 return (nsr(n, 1));
-
 }
-
-else
-{
-return (-1);
-}
-
-
-}
-
 else
 {
 return (-1);
 }
 }
-
+else
+{
+return (-1);
+}
+}
 }
