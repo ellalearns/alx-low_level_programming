@@ -4,6 +4,7 @@
  * main - the main program
  * @argc: first program param
  * @argv: second program param
+ * Return: 0
 */
 int main(int argc, char *argv[])
 {
