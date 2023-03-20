@@ -13,14 +13,14 @@ int m;
 int result;
 if (digitsum < 10)
 {
-return digitsum;
+return (digitsum);
 }
 else
 {
-m = digitsum%10;
-temp = digitsum/10;
+m = digitsum % 10;
+temp = digitsum / 10;
 result = m + findSum(temp);
-return findSum(result);
+return (findSum(result));
 }
 }
 
@@ -30,15 +30,19 @@ return findSum(result);
  * @y: another int
  * Return: int
 */
-int nsr(int x, int y) {
+int nsr(int x, int y)
+{
 x = x - y;
-if (x < 0) {
-return 0;
+if (x < 0)
+{
+return (0);
 }
-else if (x == 0) {
-return 1;
+else if (x == 0)
+{
+return (1);
 }
-else {
+else
+{
 return (1 + nsr(x, y + 2));
 }
 }
