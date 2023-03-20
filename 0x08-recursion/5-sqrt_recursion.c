@@ -6,18 +6,21 @@
  * @digitsum: the number
  * Return: int
 */
-int findSum(int digitsum){
+int findSum(int digitsum)
+{
 int temp;
-if (digitsum < 10) {
+int m;
+int result;
+if (digitsum < 10)
+{
 return digitsum;
 }
-else {
-temp = 0;
-while (digitsum > 0) {
-temp = temp + digitsum%10;
-digitsum = digitsum/10;
-}
-return (findSum(temp));
+else
+{
+m = digitsum%10;
+temp = digitsum/10;
+result = m + findSum(temp);
+return findSum(result);
 }
 }
 
