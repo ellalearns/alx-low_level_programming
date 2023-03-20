@@ -7,14 +7,12 @@
  * Return: int
 */
 int findSum(int digitsum){
-int i;
 int temp;
 if (digitsum < 10) {
 return digitsum;
 }
 else {
 temp = 0;
-i = 0;
 while (digitsum > 0) {
 temp = temp + digitsum%10;
 digitsum = digitsum/10;
