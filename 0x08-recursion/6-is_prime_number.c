@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
+int prime_number_helper_func(int n, int i);
+
 /**
  * is_prime_number - checks for a prime number
  * @n: the integer
