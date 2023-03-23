@@ -1,6 +1,5 @@
 #include "function_pointers.h"
 #include <stdio.h>
-#include <stddef.h>
 
 /**
  * array_iterator - function description
@@ -12,7 +11,7 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 
-int counter;
+unsigned int counter;
 
 if (array == NULL || action == NULL)
 {
