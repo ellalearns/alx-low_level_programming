@@ -11,6 +11,8 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 
+unsigned int counter;
+
 if (array == NULL || action == NULL)
 {
 
@@ -18,7 +20,6 @@ return;
 
 }
 
-unsigned int counter;
 counter = 0;
 
 for (counter = 0; counter < size; counter++)
