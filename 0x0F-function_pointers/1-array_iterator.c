@@ -21,8 +21,6 @@ return;
 
 }
 
-counter = 0;
-
 for (counter = 0; counter < size; counter++)
 {
     action(array[counter]);
