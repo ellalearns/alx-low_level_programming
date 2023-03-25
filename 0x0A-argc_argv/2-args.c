@@ -3,9 +3,10 @@
 
 /**
  * main - main program
- * 
+ * @argc: first arg
+ * @argv: second arg
 */
-int main(int argc __attribute__((unused)), char *argv[])
+void main(int argc __attribute__((unused)), char *argv[])
 {
 
 int counter;
