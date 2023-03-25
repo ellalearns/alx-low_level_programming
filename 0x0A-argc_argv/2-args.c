@@ -5,8 +5,9 @@
  * main - main program
  * @argc: first arg
  * @argv: second arg
+ * Return: 0
 */
-void main(int argc __attribute__((unused)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 
 int counter;
@@ -23,5 +24,7 @@ for (counter = 0; counter < i; counter++)
 {
 printf("%s\n", argv[counter]);
 }
+
+return (0);
 
 }
