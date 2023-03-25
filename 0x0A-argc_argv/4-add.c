@@ -75,6 +75,7 @@ int i;
 len = 0;
 result = 0;
 i = 0;
+num = 0;
 
 if (argc == 1)
 {
