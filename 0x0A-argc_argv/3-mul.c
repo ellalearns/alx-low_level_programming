@@ -8,36 +8,36 @@
 */
 int myatoi(char *s)
 {
-    int result;
-    int digit;
-    int i = 0;
-    int counter = 0;
-    int n = 0;
-    
-    while (s[counter])
-    {
-        counter++;
-    }
-    
-    if (s[0] == '-')
-    {
-        i = 1;
-    }
-    
-    while (s[i])
-    {
-        digit = s[i] - '0';
-        n = n * 10 + digit;
-        i++;
-    }
-    
-    if (s[0] == '-')
-    {
-        return 0 - n;
-    }
-    
-    return n;
-    
+int result;
+int digit;
+int i = 0;
+int counter = 0;
+int n = 0;
+
+while (s[counter])
+{
+counter++;
+}
+
+if (s[0] == '-')
+{
+i = 1;
+}
+
+while (s[i])
+{
+digit = s[i] - '0';
+n = n * 10 + digit;
+i++;
+}
+
+if (s[0] == '-')
+{
+return (0 - n);
+}
+
+return (n);
+
 }
 
 /**
