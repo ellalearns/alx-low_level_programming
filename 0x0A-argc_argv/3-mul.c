@@ -8,7 +8,6 @@
 */
 int myatoi(char *s)
 {
-int result;
 int digit;
 int i = 0;
 int n = 0;
