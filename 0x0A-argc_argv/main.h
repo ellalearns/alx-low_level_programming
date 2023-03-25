@@ -1,1 +1,0 @@
-int printName(int argc, char *argv[]);
