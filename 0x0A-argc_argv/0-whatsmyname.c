@@ -7,7 +7,7 @@
  * @argv: second program param
  * Return: 0
 */
-int printName(int argc, char *argv[])
+int printName(int argc __attribute__((unused)), char *argv[])
 {
 
 printf("%s\n", argv[0]);
