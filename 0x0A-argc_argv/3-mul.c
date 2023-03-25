@@ -11,13 +11,7 @@ int myatoi(char *s)
 int result;
 int digit;
 int i = 0;
-int counter = 0;
 int n = 0;
-
-while (s[counter])
-{
-counter++;
-}
 
 if (s[0] == '-')
 {
@@ -44,7 +38,7 @@ return (n);
  * main - main program
  * @argc: first param
  * @argv: second param
- * Return: 1 or 0
+ * Return: 1, 0
 */
 int main(int argc, char *argv[])
 {
