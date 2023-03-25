@@ -20,7 +20,7 @@ i = 1;
 while (s[i])
 {
 digit = s[i] - '0';
-n = n * 10 + digit;
+n = (n * 10) + digit;
 i++;
 }
 
