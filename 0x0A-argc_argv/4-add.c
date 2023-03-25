@@ -1,6 +1,36 @@
 #include "main.h"
 #include <stdio.h>
 
+int myatoi(char *s)
+{
+int digit;
+int i;
+int n;
+
+i = 0;
+n = 0;
+
+if (s[0] == '-')
+{
+i = 1;
+}
+
+while (s[i])
+{
+digit = s[i] - '0';
+n = (n * 10) + digit;
+i++;
+}
+
+if (s[0] == '-')
+{
+return (0 - n);
+}
+
+return (n);
+
+}
+
 int isvalid(char *s)
 {
 int len;
