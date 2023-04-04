@@ -26,7 +26,7 @@ return (NULL);
 
 i = 0;
 
-while (newStr[i])
+while (str[i])
 {
 newStr[i] = str[i];
 i++;
