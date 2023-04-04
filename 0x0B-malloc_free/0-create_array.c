@@ -33,5 +33,7 @@ string[i] = c;
 i++;
 }
 
+free(string);
+
 return (string);
 }
