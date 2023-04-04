@@ -24,7 +24,7 @@ if (string == NULL)
 return (NULL);
 }
 
-string[0] = c;
+string = c;
 
 return string;
 }
