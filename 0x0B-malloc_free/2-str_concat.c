@@ -11,9 +11,9 @@
 char *str_concat(char *s1, char *s2)
 {
 char *newString;
-char i;
-char len;
-char counter;
+int i;
+int len;
+int counter;
 
 
 i = 0;
