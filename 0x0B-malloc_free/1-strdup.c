@@ -26,7 +26,7 @@ while (str[len])
 len++;
 }
 
-newStr = malloc(sizeof(char) * len);
+newStr = malloc(sizeof(char) * (len + 1));
 
 if (newStr == NULL)
 {
