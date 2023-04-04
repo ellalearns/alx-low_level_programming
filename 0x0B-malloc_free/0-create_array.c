@@ -26,5 +26,5 @@ return (NULL);
 
 string = c;
 
-return string;
+return (string);
 }
