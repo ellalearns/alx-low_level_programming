@@ -15,16 +15,16 @@ i = len = counter = 0;
 if (s1 != NULL)
 {
 while (s1[len])
-    len++;
+len++;
 }
 if (s2 != NULL)
 {
 while (s2[len])
-    len++;
+len++;
 }
 newString = malloc(sizeof(char) * (len + 1));
 if (newString == NULL)
-    return(NULL);
+return(NULL);
 while (s1[i])
 {
 newString[i] = s1[i];
