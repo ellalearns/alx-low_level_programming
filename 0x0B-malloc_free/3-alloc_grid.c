@@ -18,10 +18,11 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 
-grid = malloc(sizeof(int) * (width * height));
+grid = malloc(sizeof(int *) * (width * height));
 
 if (grid == NULL)
 {
+free(grid);
 return (NULL);
 }
 
@@ -33,5 +34,5 @@ grid[len] = 0;
 len++;
 }
 
-return grid;
+return (grid);
 }
