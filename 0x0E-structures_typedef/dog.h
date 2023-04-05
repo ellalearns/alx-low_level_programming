@@ -1,4 +1,4 @@
-
+#define DOG_H
 
 /**
  * struct dog - dog structure
@@ -15,3 +15,4 @@ float age;
 char *owner;
 };
 
+#endif
