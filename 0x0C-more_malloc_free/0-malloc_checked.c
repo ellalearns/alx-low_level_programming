@@ -17,5 +17,5 @@ if (mallocPointer == NULL)
 exit(98);
 }
 
-return mallocPointer;
+return (mallocPointer);
 }
