@@ -23,9 +23,9 @@ int sum_them_all(const unsigned int n, ...)
 
     va_start(infargs, n);
 
-    for (i = n; i = 0; i--)
+    for (i = n; i == 0; i--)
     {
-        j = j + va_arg(infargs, int);
+        j = j + va_arg(infargs, const unsigned int);
     }
 
     return (j);
