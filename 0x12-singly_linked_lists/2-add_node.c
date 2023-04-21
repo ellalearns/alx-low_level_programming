@@ -20,11 +20,11 @@ list_t *add_node(list_t **head, const char *str)
         return (NULL);
     }
 
-    tempNode->next = head;
+    tempNode->next = *head;
     tempNode->str = stdrup(str);
     tempNode->len = strlen(str);
 
-    head = tempNode;
+    *head = tempNode;
 
-    return (head);
+    return (*head);
 }
