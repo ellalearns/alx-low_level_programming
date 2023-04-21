@@ -9,20 +9,20 @@
 */
 size_t list_len(const list_t *h)
 {
-    size_t counter;
-    counter = 0;
+size_t counter;
+counter = 0;
 
-    if (!h)
-    {
-        return (counter);
-    }
+if (!h)
+{
+return (counter);
+}
 
-    while (h)
-    {
-        counter++;
-        h = h->next;
-    }
+while (h)
+{
+counter++;
+h = h -> next;
+}
 
-    return (counter);
+return (counter);
 
 }
