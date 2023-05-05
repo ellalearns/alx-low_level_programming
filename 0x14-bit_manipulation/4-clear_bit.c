@@ -17,7 +17,7 @@ if (index >= 64)
 return (-1);
 }
 
-*n = ~((check << index) & *n);
+*n = (~((check << index) & *n));
 
 return (1);
 }
