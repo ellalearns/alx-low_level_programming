@@ -28,6 +28,7 @@ else
 {
 decNum = (2 * decNum) + (b[counter] - '0');
 }
+counter++;
 }
 }
 return (decNum);
