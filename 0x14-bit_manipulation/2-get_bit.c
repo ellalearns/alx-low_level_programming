@@ -19,6 +19,6 @@ if (index < 0)
 {
 return (-1);
 }
-bitNum = (n << index) & 1;
+bitNum = (n >> index) & 1;
 return (bitNum);
 }
