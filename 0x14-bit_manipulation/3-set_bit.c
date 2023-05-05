@@ -17,7 +17,7 @@ if (index >= 64)
 return (-1);
 }
 
-*n = 1;
+*n = (comp << index) | *n;
 
 return (1);
 
