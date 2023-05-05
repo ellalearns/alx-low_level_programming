@@ -13,7 +13,7 @@ int counter, iterator;
 counter = 0;
 iterator = 0;
 
-for (iterator = 70; iterator >= 0; iterator--)
+for (iterator = 60; iterator >= 0; iterator--)
 {
 nowBit = n >> iterator;
 
