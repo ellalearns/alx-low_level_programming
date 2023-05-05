@@ -19,5 +19,5 @@ return (-1);
 
 *n = ~((check << index) & *n);
 
-return (-1);
+return (1);
 }
