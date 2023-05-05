@@ -18,7 +18,7 @@ return (0);
 else
 {
 counter = 0;
-for (counter = 0; b[counter]; counter++)
+while(b[counter])
 {
 if (b[counter] < '0' || b[counter] > '1')
 {
@@ -28,6 +28,7 @@ else
 {
 decNum = (2 * decNum) + (b[counter] - '0');
 }
+counter++;
 }
 }
 return (decNum);
