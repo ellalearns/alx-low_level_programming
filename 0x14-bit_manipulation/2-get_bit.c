@@ -15,10 +15,6 @@ if (index >= 64)
 {
 return (-1);
 }
-if (index < 0)
-{
-return (-1);
-}
 bitNum = (n >> index) & 1;
 return (bitNum);
 }
