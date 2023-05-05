@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
     counter = 0;
     iterator = 0;
 
-    for (iterator = 63; iterator >= 0; iterator++)
+    for (iterator = 63; iterator >= 0; iterator--)
     {
         nowBit = n >> iterator;
 
