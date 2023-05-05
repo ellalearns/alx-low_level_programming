@@ -11,7 +11,7 @@ char *str;
 unsigned int iterator;
 
 iterator = 1;
-*str = (char *) & iterator;
+str = (char *) & iterator;
 
 return (*str);
 }
