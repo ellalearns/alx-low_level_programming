@@ -15,6 +15,7 @@ unsigned long int nxm;
 int iterator;
 
 nxm = n ^ m;
+counter = 0;
 
 for (iterator = 60; iterator >= 0; iterator--)
 {
