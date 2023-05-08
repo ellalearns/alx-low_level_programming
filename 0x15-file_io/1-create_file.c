@@ -12,7 +12,6 @@ int create_file(const char *filename, char *text_content)
 {
     ssize_t fileToCreate;
     ssize_t writeText;
-    int max;
 
     if (filename == NULL)
     {
@@ -32,9 +31,9 @@ int create_file(const char *filename, char *text_content)
         return (1);
     }
 
-    max = size_of(text_content);
+    writeText = write(fileToCreate, text_content, 10000);
 
-    writeText = write(filename, text_content, max);
+    close(fileToCreate);
 
     return (1);
 
