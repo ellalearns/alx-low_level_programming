@@ -21,26 +21,18 @@ return (-1);
 }
 theFile = open(filename, O_APPEND | O_WRONLY);
 if (theFile < 0)
-{
 return (-1);
-}
 if (text_content != NULL)
 {
 textLength = 0;
 while (text_content[textLength])
-{
 textLength++;
 }
-}
 if (text_content == NULL)
-{
-    return (1);
-}
+return (1);
 appendText = write(theFile, text_content, textLength);
 if (appendText < 1)
-{
 return (-1);
-}
 close(theFile);
 return (1);
 }
