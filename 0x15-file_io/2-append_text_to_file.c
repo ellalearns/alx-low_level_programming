@@ -20,7 +20,7 @@ if (filename == NULL)
 return (-1);
 }
 
-theFile = open(filename, O_WRONLY | O_APPEND);
+theFile = open(filename, O_APPEND | O_WRONLY | O_CREAT);
 
 if (theFile < 0)
 {
