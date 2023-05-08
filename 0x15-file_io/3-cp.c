@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
         exit(99);
     }
 
-    readText = read(file_from, readInto, 1024);
+    readText = read(file_from, readInto, max);
 
     if (readText < 0)
     {
