@@ -33,7 +33,7 @@ textLength++;
 }
 if (text_content == NULL)
 {
-    return (1);
+    return (-1);
 }
 appendText = write(theFile, text_content, textLength);
 if (appendText < 1)
