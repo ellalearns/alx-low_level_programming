@@ -30,7 +30,7 @@ return (-1);
 if (text_content != NULL)
 {
 textLength = 0;
-for (textLength == 0; text_content[textLength])
+for (textLength == 0; text_content[textLength];)
 {
     textLength++;
 }
