@@ -40,7 +40,7 @@ int create_file(const char *filename, char *text_content)
         return (1);
     }
 
-    writeText = write(fileToCreate, text_content, (strlen + 1));
+    writeText = write(fileToCreate, text_content, (strlen - 1));
 
     if (writeText < 0)
     {
