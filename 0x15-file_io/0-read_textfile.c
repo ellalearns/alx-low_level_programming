@@ -12,8 +12,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 ssize_t fileToRead;
-ssize_t readText;
-ssize_t writeText;
+ssize_t readText, writeText;
 char *textRead;
 
 /* assign correct size to the text read string*/
