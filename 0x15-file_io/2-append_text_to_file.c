@@ -43,6 +43,8 @@ if (appendText < 1)
 return (-1);
 }
 
+close(theFile);
+
 return (1);
 
 }
