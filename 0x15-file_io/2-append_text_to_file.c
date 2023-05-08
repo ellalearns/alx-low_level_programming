@@ -11,38 +11,38 @@
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
-    int theFile;
-    int appendText;
-    int textLength;
+int theFile;
+int appendText;
+int textLength;
 
-    if (filename == NULL)
-    {
-        return (-1);
-    }
+if (filename == NULL)
+{
+return (-1);
+}
 
-    theFile = open(filename, O_APPEND | O_RDWR | O_CREAT);
+theFile = open(filename, O_APPEND | O_RDWR | O_CREAT);
 
-    if (theFile < 0)
-    {
-        return (-1);
-    }
+if (theFile < 0)
+{
+return (-1);
+}
 
-    if (text_content != NULL)
-    {
-        textLength = 0;
-        while (text_content[textLength])
-        {
-            textLength++;
-        }
-    }
+if (text_content != NULL)
+{
+textLength = 0;
+while (text_content[textLength])
+{
+textLength++;
+}
+}
 
-    appendText = write(theFile, text_content, textLength);
+appendText = write(theFile, text_content, textLength);
 
-    if (appendText < 1)
-    {
-        return (-1);
-    }
+if (appendText < 1)
+{
+return (-1);
+}
 
-    return (1);
+return (1);
 
 }
