@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * append_text_to_file - function
