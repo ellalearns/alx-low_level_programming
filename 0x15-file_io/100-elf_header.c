@@ -13,7 +13,7 @@
  * @argv: second argument
  * Return: integer
 */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 
     int headerFileToOpen;
@@ -48,21 +48,7 @@ int main(int argc, char *argv[])
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
     close(headerFileToOpen);
-
-    printf("%d", argc);
-    printf("%s", argv[1]);
 
 
     return (0);
