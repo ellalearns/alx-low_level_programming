@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
 {
     
     char *readInto;
-    
 
     readInto = malloc(sizeof(char) * 1024);
 
@@ -21,7 +20,12 @@ int main(int argc, char *argv[])
         exit(97);
     }
 
+
     free(readInto);
+
+
+
+
 
     printf("%d", argc);
     printf("%s", argv[1]);
