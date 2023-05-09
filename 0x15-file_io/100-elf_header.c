@@ -6,7 +6,6 @@
 #include "main.h"
 #include <sys/types.h>
 #include <sys/stat.h>
-
 /**
  * main - function
  * @argc: argument
@@ -15,41 +14,30 @@
 */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-
-    int headerFileToOpen;
-    FILE *header;
-    int readText;
-
-    headerFileToOpen = open(argv[1], O_RDONLY);
-
-    if (headerFileToOpen < 0)
-    {
-        dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
-        exit(98);
-    }
-
-    header = malloc(1024);
-
-    if (header == NULL)
-    {
-        close(headerFileToOpen);
-        free(header);
-        dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
-        exit(98);
-    }
-
-    readText = read(headerFileToOpen, header, 1024);
-
-    if (readText < 0)
-    {
-        free(header);
-        dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
-        exit(98);
-    }
-
-
-    close(headerFileToOpen);
-
-
-    return (0);
+int headerFileToOpen;
+FILE *header;
+int readText;
+headerFileToOpen = open(argv[1], O_RDONLY);
+if (headerFileToOpen < 0)
+{
+dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
+exit(98);
+}
+header = malloc(1024);
+if (header == NULL)
+{
+close(headerFileToOpen);
+free(header);
+dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
+exit(98);
+}
+readText = read(headerFileToOpen, header, 1024);
+if (readText < 0)
+{
+free(header);
+dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
+exit(98);
+}
+close(headerFileToOpen);
+return (0);
 }
