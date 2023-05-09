@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 #include "main.h"
 
 int main(int argc, char *argv[])
@@ -10,7 +12,7 @@ int main(int argc, char *argv[])
 
     if(argc > 3 || argc < 3)
     {
-        dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+        write(STDERR_FILENO, "Usage: cp file_from file_to\n", 1024);
         exit(97);
     }
 
