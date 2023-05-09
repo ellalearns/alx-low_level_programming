@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     
     char *readInto;
     int fileFrom;
-    int readText;
+    
 
     readInto = malloc(sizeof(char) * 1024);
 
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
         exit(98);
     }
 
-    readText = read(fileFrom, readInto, 1024);
+    
 
 
     free(readInto);
