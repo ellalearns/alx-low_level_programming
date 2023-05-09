@@ -5,7 +5,14 @@
 #include <string.h>
 #include "main.h"
 
-int main()
+int main(int argc, char *argv[])
 {
+
+    if(argc > 3 || argc < 3)
+    {
+        dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+        exit(97);
+    }
+
     return (0);
 }
