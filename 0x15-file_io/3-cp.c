@@ -7,10 +7,11 @@
 #include <sys/stat.h>
 #include "main.h"
 
-int main()
+int main(int argc, char *argv[])
 {
 
-    
+    argc = 2;
+    argv = "okay"
 
     return (0);
 }
