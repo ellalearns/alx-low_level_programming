@@ -9,6 +9,11 @@
 
 int main(int argc, char *argv[])
 {
+    int fileFrom;
+    char *readInto;
+    int readText;
+
+    readInto = malloc(sizeof(char) * 1024);
 
     if (argc > 3 || argc < 3)
     {
@@ -16,8 +21,19 @@ int main(int argc, char *argv[])
         exit(97);
     }
 
-    printf("%d", argc);
-    printf("%s", argv[1]);
+    fileFrom = open(argv[1], O_RDONLY);
+
+    if (fileFrom < 0)
+    {
+        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+        exit(98);
+    }
+
+    readText = read(fileFrom, readInto, 1024);
+
+
+
+    free(readInto);
 
     return (0);
 }
