@@ -51,6 +51,7 @@ int main(int argc, char *argv[])
 
     readOnText = read(fileFrom, readInto, max);
 
+    if (readOnText < 0)
     {
         dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
         exit(98);
