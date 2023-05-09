@@ -5,6 +5,12 @@
 #include <unistd.h>
 #include "main.h"
 
+/**
+ * main - function
+ * @argc: argument
+ * @argv: second argument
+ * Return: integer
+*/
 int main(int argc, char *argv[])
 {
     printf("%d", argc);
