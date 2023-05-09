@@ -35,5 +35,8 @@ int main(int argc, char *argv[])
 
     free(readInto);
 
+    printf("%d", argc);
+    printf("%s", argv[1]);
+
     return (0);
 }
