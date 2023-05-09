@@ -20,6 +20,7 @@ int readOnText;
 unsigned int max;
 int fileTo;
 int writeText;
+int closeFile;
 max = 1024;
 readInto = malloc(sizeof(char) * 1024);
 if (readInto == NULL)
@@ -70,7 +71,17 @@ readOnText = read(fileFrom, readInto, 1024);
 fileTo = open(argv[2], O_APPEND | O_WRONLY);
 }
 free(readInto);
-close(fileFrom);
-close(fileTo);
+closeFile = close(fileFrom);
+if (closeFile < 0)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", closeFile);
+exit(100);
+}
+closeFile = close(fileTo);
+if (closeFile < 0)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", closeFile);
+exit(100);
+}
 return (0);
 }
