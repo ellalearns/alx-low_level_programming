@@ -7,6 +7,12 @@
 #include <sys/stat.h>
 #include "main.h"
 
+/**
+ * main - function
+ * @argc: argument
+ * @argv: another argument
+ * Return: 0
+*/
 int main(int argc, char *argv[])
 {
     
