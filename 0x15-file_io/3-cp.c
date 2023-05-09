@@ -16,6 +16,13 @@ int main(int argc, char *argv[])
 
     readInto = malloc(sizeof(char) * 1024);
 
+    if (readInto == NULL)
+    {
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
+
+
     if (argc > 3 || argc < 3)
     {
         dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
