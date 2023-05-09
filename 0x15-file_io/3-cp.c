@@ -12,6 +12,10 @@ int main(int argc, char *argv[])
     
     char *readInto;
     int fileFrom;
+    int readOnText;
+    unsigned int max;
+
+    max = 1024;
     
 
     readInto = malloc(sizeof(char) * 1024);
@@ -37,7 +41,12 @@ int main(int argc, char *argv[])
         exit(98);
     }
 
-    
+    readOnText = read(fileFrom, readInto, max);
+
+    {
+        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+        exit(98);
+    }
 
 
     free(readInto);
