@@ -14,6 +14,8 @@ int main(int argc, char *argv[])
     int fileFrom;
     int readOnText;
     unsigned int max;
+    int fileTo;
+    int writeText;
 
     max = 1024;
     
@@ -46,6 +48,38 @@ int main(int argc, char *argv[])
     {
         dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
         exit(98);
+    }
+
+    fileTo = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+
+    if (fileTo < 0)
+    {
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			free(readInto);
+			exit(99);
+		}
+
+    while (readOnText > 0)
+    {
+        if (fileFrom < 0 || readOnText < 0)
+        {
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			free(readInto);
+			exit(98);
+		}
+
+        writeText = write(fileTo, readInto, readOnText);
+
+        if (writeText < 0)
+        {
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			free(readInto);
+			exit(99);
+		}
+
+        readOnText = read(fileFrom, readInto, 1024);
+        
+        fileTo = open(argv[2], O_APPEND | O_WRONLY);
     }
 
 
