@@ -87,10 +87,7 @@ int main(int argc, char *argv[])
 
 
     close(fileFrom);
-
-
-    printf("%d", argc);
-    printf("%s", argv[1]);
+    close(fileTo);
 
     return (0);
 }
