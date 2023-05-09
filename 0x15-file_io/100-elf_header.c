@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
 {
 
     int headerFileToOpen;
+    FILE *header;
+    int readText;
 
     headerFileToOpen = open(argv[1], O_RDONLY);
 
@@ -25,6 +27,26 @@ int main(int argc, char *argv[])
         dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
         exit(98);
     }
+
+    header = malloc(1024);
+
+    if (header == NULL)
+    {
+        close(headerFileToOpen);
+        free(header);
+        dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
+        exit(98);
+    }
+
+    readText = read(headerFileToOpen, header, 1024);
+
+    if (readText < 0)
+    {
+        free(header);
+        dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
+        exit(98);
+    }
+
 
 
 
