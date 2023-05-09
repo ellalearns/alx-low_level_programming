@@ -4,6 +4,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include "main.h"
+#include <sys/types.h>
+#include <sys/stat.h>
 
 /**
  * main - function
@@ -13,6 +15,30 @@
 */
 int main(int argc, char *argv[])
 {
+
+    int headerFileToOpen;
+
+    headerFileToOpen = open(argv[1], O_RDONLY);
+
+    if (headerFileToOpen < 0)
+    {
+        dprintf(STDERR_FILENO, "Error: can't read the file I want to read");
+        exit(98);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    close(headerFileToOpen);
+
     printf("%d", argc);
     printf("%s", argv[1]);
 
