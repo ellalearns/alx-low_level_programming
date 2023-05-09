@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
     if(argc > 3 || argc < 3)
     {
-        write(STDERR_FILENO, "Usage: cp file_from file_to\n", 1024);
+        
         exit(97);
     }
 
