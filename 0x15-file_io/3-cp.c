@@ -21,7 +21,9 @@ int main(int argc, char *argv[])
         exit(97);
     }
 
-    
+    printf("%s", readInto);
+
+    free(readInto);
 
     printf("%d", argc);
     printf("%s", argv[1]);
