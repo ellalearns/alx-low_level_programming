@@ -7,9 +7,11 @@
 #include <sys/stat.h>
 #include "main.h"
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 
+    printf("%d", argc);
+    printf("%s", argv[1]);
     // argc = 2;
     // printf("%s\n", argv[0]);
 
