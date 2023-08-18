@@ -24,6 +24,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
             return (-1);
         }
         currentNode = currentNode -> next;
+        counter++;
     }
     while (counter2 < (index - 1))
     {
@@ -32,6 +33,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
             return (-1);
         }
         prevNode = prevNode -> next;
+        counter2++;
     }
     prevNode->next = currentNode->next;
     currentNode->prev = NULL;
