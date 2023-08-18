@@ -8,17 +8,16 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-    size_t nodes = 0;
-    const dlistint_t *now;
+size_t nodes = 0;
+const dlistint_t *now;
 
-    now = h;
+now = h;
 
-    while (now != NULL)
-    {
-        printf("%d\n", now->n);
-        nodes++;
-        now = now->next;
-    }
-
-    return (nodes);
+while (now != NULL)
+{
+printf("%d\n", now -> n);
+nodes++;
+now = now -> next;
+}
+return (nodes);
 }
