@@ -29,6 +29,7 @@ _puts - func
 void _puts(char *s)
 {
 if (s)
+{}
 }
 /**
 _atoi - func
