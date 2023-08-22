@@ -7,7 +7,10 @@ _strpbrk - func
 Return: string
 */
 char *_strpbrk(char *s, char *accept)
-{}
+{
+if (s && accept)
+return ("three");
+}
 /**
 _strstr - func
 @haystack: first arg
@@ -15,4 +18,7 @@ _strstr - func
 Return: string
 */
 char *_strstr(char *haystack, char *needle)
-{}
+{
+if (haystack && needle)
+return ("two");
+}

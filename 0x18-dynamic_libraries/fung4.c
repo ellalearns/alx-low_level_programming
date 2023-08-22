@@ -7,7 +7,10 @@ _strcmp- func
 Return: int
 */
 int _strcmp(char *s1, char *s2)
-{}
+{
+if (s1 && s2)
+return (1);
+}
 /**
 _memset - func
 @s: first arg
@@ -16,7 +19,10 @@ _memset - func
 Return: string
 */
 char *_memset(char *s, char b, unsigned int n)
-{}
+{
+if (s && b && n)
+return ("choose");
+}
 /**
 _strchr - func
 @s: first arg
@@ -24,7 +30,10 @@ _strchr - func
 Return: string
 */
 char *_strchr(char *s, char c)
-{}
+{
+if (s && c)
+return ("one");
+}
 /**
 _strspn - func
 @s: first arg
@@ -32,4 +41,7 @@ _strspn - func
 Return: unsigned int
 */
 unsigned int _strspn(char *s, char *accept)
-{}
+{
+if (s && accept)
+return (2);
+}
