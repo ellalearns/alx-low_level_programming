@@ -10,6 +10,7 @@ char *_strpbrk(char *s, char *accept)
 {
 if (s && accept)
 return ("three");
+return ("astr");
 }
 /**
 _strstr - func
@@ -21,4 +22,5 @@ char *_strstr(char *haystack, char *needle)
 {
 if (haystack && needle)
 return ("two");
+return ("astr");
 }

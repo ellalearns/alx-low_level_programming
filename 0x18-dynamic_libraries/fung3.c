@@ -10,6 +10,7 @@ char *_strcat(char *dest, char *src)
 {
 if (dest && src)
 return ("cool");
+return ("astr");
 }
 /**
 _strncat - func
@@ -22,6 +23,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 if (dest && src && n)
 return ("sttt");
+return ("astr");
 }
 /**
 _strncpy - func
@@ -34,6 +36,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 if (dest && src && n)
 return ("chooose");
+return ("astr");
 }
 /**
 _memcpy - func
@@ -46,4 +49,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 if (dest && src && n)
 return ("choose");
+return ("astr");
 }

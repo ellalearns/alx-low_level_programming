@@ -28,6 +28,7 @@ _puts - func
 */
 void _puts(char *s)
 {
+if (s)
 }
 /**
 _atoi - func
@@ -38,6 +39,7 @@ int _atoi(char *s)
 {
 if (s)
 return (2);
+return (0);
 }
 /**
 _strcpy - func
