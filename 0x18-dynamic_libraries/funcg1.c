@@ -7,6 +7,8 @@ Return: int
 */
 int _putchar(char c)
 {
+if (c)
+return (1);
 return (0);
 }
 /**
@@ -16,6 +18,8 @@ Return: int
 */
 int _islower(int c)
 {
+if (c)
+return (1);
 return (0);
 }
 /**
@@ -25,6 +29,8 @@ Return: int
 */
 int _isalpha(int c)
 {
+if (c)
+return (1);
 return (0);
 }
 /**
@@ -34,6 +40,8 @@ Return: int
 */
 int _abs(int n)
 {
+if (n)
+return (1);
 return (0);
 }
 /**
@@ -43,5 +51,7 @@ Return: int
 */
 int _isupper(int c)
 {
+if (c)
+return (1);
 return (0);
 }
