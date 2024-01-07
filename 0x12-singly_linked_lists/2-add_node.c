@@ -25,17 +25,21 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new_node->str = malloc(sizeof(char) * (counter + 1));
+	new_node->str = malloc(sizeof(char) * (counter));
+	if (new_node->str == NULL)
+	{
+		return (NULL);
+	}
 
 	while (second_counter <= counter)
 	{
-		new_node->str[second_counter] = str[counter];
+		(new_node->str)[second_counter] = str[counter];
 		second_counter++;
 	}
 
 	new_node->len = second_counter;
 
-	new_node->next = *head;
+	new_node->next = *head->next;
 
 	*head = new_node;
 
