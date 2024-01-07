@@ -8,10 +8,8 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	unsigned int str_len;
 	unsigned int counter;
 	unsigned int second_counter;
-	char *new_str;
 
 	counter = 0;
 	second_counter = 0;
