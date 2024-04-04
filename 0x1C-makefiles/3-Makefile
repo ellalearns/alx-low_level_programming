@@ -8,18 +8,13 @@ all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 clean:
-	find ./ -name "#*#" | xargs ${RM}
-	find ./ -name "*~" | xargs ${RM}
-	${RM} ${NAME}
+	${RM} -rf ${NAME} #*# *~
 
 oclean:
-	find ./ -name "*.o" | xargs ${RM}
+	${RM} -rf *.o
 
 fclean:
-	find ./ -name "#.#" | xargs ${RM}
-	find ./ -name "*~" | xargs ${RM}
-	find ./ -name "*.o" | xargs ${RM}
-	${RM} ${NAME}
+	${RM} -rf ${NAME} #*# *~ *.o
 
 re:
 	oclean all
