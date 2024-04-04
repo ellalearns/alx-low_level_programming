@@ -14,12 +14,13 @@ clean:
 	${RM} -rf *~ ${NAME}
 
 oclean:
-	${RM} -rf *.o
+	${RM} -rf ${OBJ}
 
 fclean:
 	${RM} ${NAME}
 	${RM} *~
-	${RM} *.o
+	${RM} ${OBJ}
 
 re:
-	oclean all
+	${RM} -rf ${OBJ}
+	all
