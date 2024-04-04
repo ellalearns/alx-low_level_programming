@@ -17,10 +17,6 @@ oclean:
 	${RM} -rf ${OBJ}
 
 fclean:
-	${RM} ${NAME}
-	${RM} *~
-	${RM} ${OBJ}
+	${RM} -rf *~ ${OBJ} ${NAME}
 
-re:
-	${RM} -rf ${OBJ}
-	${CC} ${CFLAGS} ${OBJ} -o ${NAME}
+re: oclean all
