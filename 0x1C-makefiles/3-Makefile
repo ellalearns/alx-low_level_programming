@@ -14,7 +14,6 @@ oclean:
 	${RM} -rf *.o
 
 fclean:
-	clean oclean
+	${RM} -rf ${NAME} #*# *~ *.o
 
-re:
-	oclean all
+re: oclean all
